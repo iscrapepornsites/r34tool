@@ -6,6 +6,11 @@ You have to change the credentials to the database in `me.mux.aps.mongo.MongoAda
 
 # Compiling
     mvn package
+    
+# Compiling with Docker Maven Image
+    git clone https://github.com/iscrapepornsites/r34tool.git
+    cd r34tool
+    docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn package
 
 # Usage
 ### `java -jar <yourfile>.jar [wait_time] watch [timeout]`
